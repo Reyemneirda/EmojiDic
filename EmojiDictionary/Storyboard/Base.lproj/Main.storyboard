@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mkU-Jl-OZx">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mkU-Jl-OZx" customClass="EmojiTableViewCell" customModule="EmojiDictionary" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mkU-Jl-OZx" id="a8y-uK-b2B" customClass="EmojiTableViewCell" customModule="EmojiDictionary" customModuleProvider="target">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mkU-Jl-OZx" id="a8y-uK-b2B" userLabel="EmojiCell" customClass="EmojiTableViewCell" customModule="EmojiDictionary" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -61,6 +61,11 @@
                                         <constraint firstAttribute="trailing" secondItem="bJQ-Xl-Fy1" secondAttribute="trailing" id="XgR-oS-jXi"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="uUU-1k-Qs9" id="Hhi-P3-2UA"/>
+                                    <outlet property="nameLabel" destination="Fpz-n2-B3o" id="RiS-LL-A7W"/>
+                                    <outlet property="symbolLabel" destination="ohr-xW-5am" id="zbP-1b-9dM"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
